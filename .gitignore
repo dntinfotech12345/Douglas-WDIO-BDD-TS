@@ -1,0 +1,6 @@
+allure-results/
+allure-report/
+.idea/
+node_modules/
+package-lock.json
+
