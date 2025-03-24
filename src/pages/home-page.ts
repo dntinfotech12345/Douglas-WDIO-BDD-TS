@@ -1,7 +1,7 @@
 import { $, browser } from "@wdio/globals";
 import { ElementControl } from "../base-controls/element-control";
 import { timeouts } from "../../config/timeouts-config";
-import { assertData } from "../../data/assert-data";
+import { assertData } from "../../data/test-data";
 
 class HomePage {
 

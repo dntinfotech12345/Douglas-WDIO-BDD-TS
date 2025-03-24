@@ -2,8 +2,8 @@ import { Given, When, Then } from '@cucumber/cucumber';
 import logger from '../helper/logger';
 import { homePage } from '../pages/home-page';
 import { parfumPage } from '../pages/parfum-page';
-import { browserOpenUrl } from '../helper/browser/browser-open-url';
 import { configs } from '../../config/environment-config';
+import { browserOpenUrl } from '../helper/browser-utils';
 
 Given(/^I am on the home page$/, async () => {
 
@@ -17,12 +17,9 @@ Given(/^I am on the home page$/, async () => {
     logger.info("Accepted all cookies");
 });
 
-
 When(/^I navigate to the "([^"]*)" page by clicking the "([^"]*)" tab$/, async (pageName: string, headingTabName: string) => {
     logger.info(`Clicking on the ${headingTabName} tab`);
     await homePage.clickOnHeadlineTab(headingTabName);
-
-    logger.info(`Verifying that the page title contains: ${pageName}`);
     await parfumPage.waitForDisplay();
 });
 

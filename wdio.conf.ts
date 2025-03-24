@@ -13,27 +13,27 @@ export const config: WebdriverIO.Config = {
     specs: [
         './src/tests/**/*.feature'
     ],
-    
+
     exclude: [
         // 'path/to/excluded/files'
     ],
-    
+
     maxInstances: 10,
-    
+
     capabilities: [{
         browserName: 'chrome'
     }],
 
-     logLevel: debug ? "info" : "error",
-    
+    logLevel: debug ? "info" : "error",
+
     bail: 0,
-   
+
     waitforTimeout: 15000,
-    
+
     connectionRetryTimeout: 150000,
-    
+
     connectionRetryCount: 3,
-    
+
     framework: 'cucumber',
 
     reporters:
@@ -55,23 +55,23 @@ export const config: WebdriverIO.Config = {
         ],
 
     cucumberOpts: {
-               require: ['./src/steps/**/*.ts'],
-       
+        require: ['./src/steps/**/*.ts'],
+
         backtrace: false,
-         requireModule: [],
+        requireModule: [],
         dryRun: false,
         failFast: false,
-        
+        retry: 2,
         name: [],
-       
+
         snippets: true,
-       
+
         source: true,
-        
+
         strict: false,
-              tagExpression: '@parfum',
-         timeout: 60000,
-        
+        tagExpression: '',
+        timeout: 60000,
+
         ignoreUndefinedDefinitions: false
     },
 
@@ -82,9 +82,19 @@ export const config: WebdriverIO.Config = {
             console.log('✅ Allure reports cleared!');
         }
     },
-   
+
     afterStep: async function (_step, _scenario, _result, _context) {
         await browser.takeScreenshot();
     },
-   
-}
+
+    beforeScenario: async function (scenario) {
+        console.log(`Starting scenario: ${scenario.pickle.name}`);
+    },
+
+    afterScenario: async function (scenario, result) {
+        if (!result.passed) {
+            console.log(`Retrying scenario: ${scenario.pickle.name}`);
+        }
+    },
+
+    }

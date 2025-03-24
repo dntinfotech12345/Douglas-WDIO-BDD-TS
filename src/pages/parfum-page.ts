@@ -2,8 +2,8 @@ import { $, browser } from "@wdio/globals";
 import logger from "../helper/logger";
 import { timeouts } from "../../config/timeouts-config";
 import { ElementControl } from "../base-controls/element-control";
-import { assertData } from "../../data/assert-data";
-import { assertEqual } from "../helper/assert/assert-equal";
+import { assertData } from "../../data/test-data";
+import { assertEqual } from "../helper/assertions";
 
 class ParfumPage {
 

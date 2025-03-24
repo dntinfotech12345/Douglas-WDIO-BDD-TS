@@ -1,8 +1,8 @@
 import { ClickOptions, ChainablePromiseElement } from 'webdriverio';
 import { timeouts } from '../../config/timeouts-config';
-import { browserWaitUntil } from '../helper/browser/browser-wait-until';
-import { assertEqual } from '../helper/assert/assert-equal';
 import { browser, expect } from '@wdio/globals';
+import { browserWaitUntil } from '../helper/browser-utils';
+import { assertEqual } from '../helper/assertions';
 
 export class ElementControl {
     public el: ChainablePromiseElement;
