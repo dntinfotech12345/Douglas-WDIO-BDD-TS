@@ -1,0 +1,31 @@
+[2025-03-19 08:01:07] [INFO]: Validating the home page URL contains dashboard identifier
+[2025-03-19 08:01:07] [INFO]: Click on 'accept all' cookies button
+[2025-03-19 08:01:13] [INFO]: Accepted all cookies
+[2025-03-19 08:01:14] [INFO]: Clicking on the PARFUM tab
+[2025-03-19 08:01:14] [INFO]: Verifying that the page title contains: PARFUM
+[2025-03-19 08:01:26] [INFO]: Validating the url and title of the PARFUM page
+[2025-03-19 08:01:27] [INFO]: Selecting the dropdown option: Zusatzstoffe
+[2025-03-19 08:01:27] [INFO]: Selecting the filter option: parabenfrei
+[2025-03-19 08:01:27] [INFO]: Selecting dropdown filter option: parabenfrei
+[2025-03-19 08:01:30] [INFO]: Dropdown filter option 'parabenfrei' selected
+[2025-03-19 08:01:38] [INFO]: Validating that the filter option: parabenfrei is applied successfully
+[2025-03-19 08:01:45] [INFO]: Validating the home page URL contains dashboard identifier
+[2025-03-19 08:01:45] [INFO]: Click on 'accept all' cookies button
+[2025-03-19 08:01:50] [INFO]: Accepted all cookies
+[2025-03-19 08:01:50] [INFO]: Clicking on the PARFUM tab
+[2025-03-19 08:01:53] [INFO]: Verifying that the page title contains: PARFUM
+[2025-03-19 08:02:04] [INFO]: Validating the url and title of the PARFUM page
+[2025-03-19 08:02:05] [INFO]: Selecting the dropdown option: Zusatzstoffe
+[2025-03-19 08:02:06] [INFO]: Selecting the filter option: sulfatfrei
+[2025-03-19 08:02:06] [INFO]: Selecting dropdown filter option: sulfatfrei
+[2025-03-19 08:02:09] [INFO]: Dropdown filter option 'sulfatfrei' selected
+[2025-03-19 08:02:15] [INFO]: Validating that the filter option: sulfatfrei is applied successfully
+[2025-03-19 08:02:22] [INFO]: Validating the home page URL contains dashboard identifier
+[2025-03-19 08:02:22] [INFO]: Click on 'accept all' cookies button
+[2025-03-19 08:02:27] [INFO]: Accepted all cookies
+[2025-03-19 08:02:28] [INFO]: Clicking on the PARFUM tab
+[2025-03-19 08:02:31] [INFO]: Verifying that the page title contains: PARFUM
+[2025-03-19 08:02:42] [INFO]: Validating the url and title of the PARFUM page
+[2025-03-19 08:02:43] [INFO]: Selecting the dropdown option: Zusatzstoffe
+[2025-03-19 08:02:47] [INFO]: Selecting the filter option: vegan
+[2025-03-19 08:02:47] [INFO]: Selecting dropdown filter option: vegan
