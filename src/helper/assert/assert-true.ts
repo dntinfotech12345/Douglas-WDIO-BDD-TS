@@ -1,10 +1,6 @@
 import { expect } from 'expect-webdriverio';
 import allure from '@wdio/allure-reporter';
 
-/**
- * @param condition - The boolean condition to assert.
- * @param message - The error message to display if the assertion fails.
- */
 export const assertTrue = (condition: boolean, message: string): void => {
     try {
         // Perform the assertion using expect-webdriverio

@@ -15,9 +15,6 @@ export class ElementControl {
         return this.el.$('..');
     }
 
-    /**
-     * Actions
-     */
     public async click(clickOptions?: ClickOptions): Promise<void> {
         await this.scrollIntoView();
         await this.waitForClickable(timeouts.huge, `Element with selector: ${await this.el.selector} is not clickable`);
@@ -66,16 +63,10 @@ export class ElementControl {
         }, await this.el);
     }
 
-    /**
-     * Boolean
-     */
     public async isDisplayed(): Promise<boolean> {
         return this.el.isDisplayed();
     }
 
-    /**
-     * Waits
-     */
     public async waitForDisplayed(timeout: number, timeoutMsg: string): Promise<void> {
         await this.el.waitForDisplayed({ timeout, timeoutMsg });
     }
@@ -103,9 +94,6 @@ export class ElementControl {
         }
     }
 
-    /**
-     * Assertions
-     */
     public async expectToBeDisplayed(errorMsg: string): Promise<void> {
         await expect(this.el).toBeDisplayed({ message: errorMsg });
     }

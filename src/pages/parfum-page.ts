@@ -23,9 +23,6 @@ class ParfumPage {
         return await new ElementControl(await $(`//button[@class="selected-facets__value" and text()="${facetOption}"]`));
     };
 
-    /**
-     * Logic
-     */
     public async waitForDisplay(): Promise<void> {
         await (await this.getTitleEl()).waitForDisplayed(timeouts.huge, 'Parfume title is not displayed')
     }

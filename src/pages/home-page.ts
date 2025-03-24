@@ -13,9 +13,6 @@ class HomePage {
         return await new ElementControl(await $('[data-testid="uc-accept-all-button"]'));
     };
     
-    /**
-     * Logic
-     */
     public async verifyHomePageUrl(): Promise<void> {
         const currentURL = await browser.getUrl();
         await currentURL.includes(assertData.homePage.title);

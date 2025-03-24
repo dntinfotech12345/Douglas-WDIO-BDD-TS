@@ -1,14 +1,13 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import logger from '../helper/logger';
 import { homePage } from '../pages/home-page';
-import { parfumPage } from '../pages/perfume-page';
+import { parfumPage } from '../pages/parfum-page';
 import { browserOpenUrl } from '../helper/browser/browser-open-url';
 import { configs } from '../../config/environment-config';
 
 Given(/^I am on the home page$/, async () => {
 
     await browserOpenUrl(configs.douglasURL);
-    console.log('Navigated to URL:', configs.douglasURL);
 
     logger.info('Validating the home page URL contains dashboard identifier');
     await homePage.verifyHomePageUrl();

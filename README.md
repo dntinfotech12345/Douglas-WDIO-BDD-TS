@@ -12,7 +12,6 @@ This project is an end-to-end test automation framework for the Douglas website 
 1. Clone the repository:
    ```sh
    git clone <repository-url>
-   cd Douglas
 
    Install dependencies:
    npm install

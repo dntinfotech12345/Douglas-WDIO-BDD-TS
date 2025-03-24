@@ -5,7 +5,6 @@ import fs from "fs";
 const logDir = "./logs";
 if (fs.existsSync(logDir)) {
   fs.rmSync(logDir, { recursive: true, force: true });
-  console.log("🗑️ Logs cleared before execution...");
 }
 fs.mkdirSync(logDir, { recursive: true });
 
